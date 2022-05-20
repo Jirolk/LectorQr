@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LectorQr.Vista.salida">
+    <ContentPage.Content>
+
+        <StackLayout Background="white">
+            <Frame>
+                <StackLayout >
+
+                    <Image Source="https://fcea-unc.edu.py/wp-content/uploads/2018/12/FCEA_logo.gif"
+                           HeightRequest="150"/>
+                    <Label Text="Control de Acceso"
+                       Margin="24"
+                       BackgroundColor="#32CCCC"
+                       FontSize="24"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontAttributes="Bold"/>
+                    <Label Text="Salida"
+                       Margin="24"
+                       BackgroundColor="#32CCCC"
+                       FontSize="24"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontAttributes="Bold"/>
+                </StackLayout>
+
+            </Frame>
+
+            <Frame BorderColor="Black">
+                <Label Text="..."
+                       x:Name="lblLecturaQr"
+                       HeightRequest="100"
+                       BackgroundColor="#993266"
+                       FontSize="16"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       TextColor="WhiteSmoke"/>
+            </Frame>
+            <Frame>
+                <Button x:Name="btnLeerQr" 
+                        CornerRadius="40"
+                        BackgroundColor="#FCF895" 
+                        Text="Leer QR"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Clicked="btnLeerQr_Clicked"/>
+
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Linterna OFF/ON"
+                       TextColor="#32CCCC"
+                       FontAttributes="Bold"
+                       FontSize="22"/>
+                <Switch x:Name="swhitchLinterna"
+                        IsToggled="False"
+                        WidthRequest="100"
+                        Toggled="swhitchLinterna_Toggled"/>
+
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

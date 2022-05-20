@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LectorQr.MainPage">
+    <ContentPage.Content>
+        
+        <StackLayout Background="white">
+            <Frame>
+                <StackLayout >
+
+                    <Image Source="https://fcea-unc.edu.py/wp-content/uploads/2018/12/FCEA_logo.gif"
+                           HeightRequest="150"/>
+                    <Label Text="Control de Acceso"
+                       Margin="24"
+                       BackgroundColor="#32CCCC"
+                       FontSize="24"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontAttributes="Bold"/>
+                </StackLayout>
+                
+            </Frame>
+            
+            
+            
+            <StackLayout Margin="50"
+                Orientation="Vertical">
+                <ImageButton BackgroundColor="Transparent"
+                Source="entrada.png"
+                    HeightRequest="150"
+                             x:Name="btnentraga"
+                             Clicked="btnentraga_Clicked"/>
+                <Label Text="Entrada" 
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       FontSize="30"/>
+                <ImageButton  Margin="10" 
+                              Source="salida.jpg" BackgroundColor="Transparent"
+                             HeightRequest="150"
+                              x:Name="btnsalida"
+                              Clicked="btnsalida_Clicked"/>
+                <Label Text="Salida" 
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       FontSize="30"/>
+            </StackLayout>
+        </StackLayout>
+        
+
+    </ContentPage.Content>
+    
+
+</ContentPage>
